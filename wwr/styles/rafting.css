@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #5A84B3;
+    --primary-color: #344F7C;
     --secondary-color: #F4A261;
     --accent1-color: #095859;
     --accent2-color: #EAA368;
@@ -78,9 +78,13 @@ article {
     height: auto;
 }
 
+.hero article {
+    position: absolute;
+}
+
 .hero article img {
     float: right;
     width: 125px;
     border: 1px solid var(--accent2-color);
-    box-shadow: var(--primary-color);
+    box-shadow: var(--secondary-color);
 }
