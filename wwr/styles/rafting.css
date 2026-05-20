@@ -26,6 +26,48 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+    background-color: var(--accent1-color);
+}
+
+header img {
+    background: transparent;
+    grid-column: 1/3;
+}
+
+nav ul {
+
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 0;
+    padding: 0;
+
+}
+
+nav li {
+    flex: 1 1 auto;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -34,6 +76,7 @@ h2 {
 
 nav,
 p,
+p2,
 section,
 article {
     margin: 16px;
@@ -53,6 +96,7 @@ h1 {
 
 h2 {
     width: 100%;
+    height: auto;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
@@ -71,14 +115,49 @@ article {
     color: var(--text-color);
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--accent1-color);
+    color: var(--text-color);
+}
+
+footer p {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+
+    background-color: var(--accent1-color);
+    border: 1px solid gray;
+}
+
 /* Class Selectors */
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+}
 
 .socialmedia a {
     text-decoration: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
 }
 
 .hero {
     position: relative;
+    margin-top: 1rem;
 }
 
 .hero img {
@@ -89,6 +168,7 @@ article {
 
 .hero article {
     position: absolute;
+
 }
 
 .hero article img {
@@ -96,4 +176,61 @@ article {
     width: 125px;
     border: 1px solid var(--accent2-color);
     box-shadow: var(--secondary-color);
+}
+
+.history {
+    margin-top: 1rem;
+    padding: 1.5rem;
+
+    border: 1px solid gray;
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 1rem;
+}
+
+.history h2 {
+    grid-column: 1/4;
+
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* .history p {
+    grid-column: 1;
+
+} */
+
+.history img {
+    width: 200px;
+    justify-self: center;
+}
+
+.adventure {
+    margin-top: 1rem;
+    padding: 1.5rem;
+
+    border: 1px solid gray;
+}
+
+.adventure h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    /* background: transparent; */
+    /* color: black; */
+}
+
+.adventure-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.adventure-images figure {
+    text-align: center;
+
+}
+
+.adventure-images img {
+    width: 120px;
 }
