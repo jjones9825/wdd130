@@ -101,6 +101,7 @@ h2 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: var(--text-color);
+
 }
 
 article {
@@ -194,11 +195,6 @@ footer p {
     margin-bottom: 1rem;
 }
 
-/* .history p {
-    grid-column: 1;
-
-} */
-
 .history img {
     width: 200px;
     justify-self: center;
@@ -209,17 +205,6 @@ footer p {
     padding: 1.5rem;
 
     border: 1px solid gray;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    border: 1px solid gray;
-    /* background: transparent; */
-    /* color: black; */
-}
-
-.adventure {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
