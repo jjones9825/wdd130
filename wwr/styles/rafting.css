@@ -116,7 +116,7 @@ article {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 1rem 2rem;
     background-color: var(--accent1-color);
@@ -126,8 +126,8 @@ footer {
 footer p {
     margin: 1rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-self: center;
 
     padding: 1rem 2rem;
 
@@ -146,7 +146,7 @@ footer p {
     text-decoration: none;
     display: flex;
     gap: 10px;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .socialmedia img {
@@ -211,25 +211,25 @@ footer p {
     border: 1px solid gray;
 }
 
-.adventure h2 {
+h2 {
     text-align: center;
     margin-bottom: 1rem;
-
+    border: 1px solid gray;
     /* background: transparent; */
     /* color: black; */
 }
 
-.adventure-images {
+.adventure {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
 }
 
-.adventure-images figure {
+.adventure figure {
     text-align: center;
 
 }
 
-.adventure-images img {
+.adventure img {
     width: 120px;
 }
