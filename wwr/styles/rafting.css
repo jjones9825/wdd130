@@ -35,7 +35,7 @@ header {
     align-items: center;
     border-bottom: var(--border-bottom);
     max-width: 1000px;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
 }
 
 header img {
@@ -62,6 +62,7 @@ nav a {
     display: block;
     padding: 20px;
     font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
     color: var(--text-color);
 }
 
@@ -91,7 +92,7 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
 }
 
@@ -101,9 +102,13 @@ h2 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
 
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 article {
@@ -113,7 +118,7 @@ article {
     padding: 10px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
 }
 
@@ -122,7 +127,7 @@ footer {
     justify-content: flex-end;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
 }
 
@@ -134,8 +139,7 @@ footer p {
 
     padding: 1rem 2rem;
 
-    background-color: var(--accent1-color);
-    border: var(--border);
+    background-color: var(--primary-color);
 }
 
 /* Class Selectors */
@@ -171,12 +175,41 @@ footer p {
 .hero article {
     position: absolute;
 
+    bottom: 60px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 90%;
+    max-width: 1100px;
+    height: 25%;
+
+    padding: 0.25rem;
+
+    border-radius: 10px;
+
+}
+
+.hero article p {
+    position: absolute;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+
+    text-align: left;
+    margin: 0;
+    padding-right: 1rem;
+
+    max-width: 75%;
 }
 
 .hero article img {
     float: right;
-    width: 125px;
-    border: 1px solid var(--accent2-color);
+
+    width: 140px;
+    margin: 0.5rem;
+    height: auto;
+    border: 2px solid var(--accent2-color);
     box-shadow: var(--secondary-color);
 }
 
@@ -225,6 +258,7 @@ footer p {
 
 .adventure-images figure {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
