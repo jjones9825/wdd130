@@ -122,6 +122,58 @@ article {
     color: var(--text-color);
 }
 
+form {
+    width: 350px;
+
+    padding: 0;
+    border: none;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.5rem;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    /* gap: 0.5rem; */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+
+    font-size: 1rem;
+    border: var(--border);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+}
+
+label,
+.purpose-label,
+.newsletter {
+    align-self: start;
+    font-size: 1.1rem;
+}
+
+button {
+    grid-column: 1/3;
+    padding: 0.75rem;
+    border: var(--border);
+
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+button:hover {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
 footer {
     display: flex;
     justify-content: flex-end;
@@ -264,4 +316,108 @@ footer p {
 
 .adventure-images img {
     width: 120px;
+}
+
+.employees {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+
+    border: var(--border);
+    text-align: center;
+}
+
+.employees h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.employee-images {
+    margin-top: 1rem;
+    padding: 1.5rem;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.employee-images figure {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.employee-images img {
+    width: 120px;
+    border: 1px solid var(--secondary-color);
+}
+
+.contact {
+    width: 700px;
+    margin: 2rem auto;
+
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.radio-button {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.radio-button label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.company-info h2 {
+    text-align: center;
+
+    margin-bottom: 1rem;
+    position: static;
+}
+
+.company-info p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.map {
+    width: 450px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 325px;
+    border: var(--border)
+}
+
+.newsletter {
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    gap: 1rem;
+
+}
+
+.newsletter label {
+    /* width: 100%; */
+    flex: 1;
+
+    /* grid-column: 1 / 3; */
+}
+
+.message-box {
+    grid-column: 1 / 3;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
