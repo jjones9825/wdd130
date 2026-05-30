@@ -1,9 +1,10 @@
 :root {
-    --primary-color: #344F7C;
+    --primary-color: #172f57;
     --secondary-color: #F4A261;
     --accent1-color: #095859;
     --accent2-color: #EAA368;
     --text-color: #FFF;
+    --body-text-color: #000;
     --border: 1px solid #808080;
     --border-bottom: 1px solid #ccc;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -18,7 +19,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--body-text-color);
 }
 
 header,
