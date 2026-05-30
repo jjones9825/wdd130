@@ -93,7 +93,6 @@ h1 {
     padding: 16px;
     text-align: center;
     background-color: rgba(23, 47, 87, 0.7);
-    background-color: var(--primary-color);
     color: var(--text-color);
 }
 
@@ -103,7 +102,6 @@ h2 {
     padding: 16px;
     text-align: center;
     background-color: rgba(23, 47, 87, 0.7);
-    background-color: var(--primary-color);
     color: var(--text-color);
 
 }
@@ -119,7 +117,6 @@ article {
     padding: 10px;
     text-align: center;
     background-color: rgba(23, 47, 87, 0.7);
-    background-color: var(--primary-color);
     color: var(--text-color);
 }
 
