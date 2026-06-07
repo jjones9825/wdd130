@@ -262,7 +262,6 @@ footer p {
 
     width: 140px;
     margin: 0.5rem;
-    height: auto;
     border: 2px solid var(--accent2-color);
     box-shadow: var(--secondary-color);
 }
